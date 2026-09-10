@@ -62,6 +62,8 @@ Sobre la fotografía completa la diferencia máxima entre ambos métodos es de
 
 `lab04_histograma_canales.py`
 
+![Fotografia analizada](img/muestra.jpg)
+
 ![Histogramas de los tres canales](img/lab04_histogramas.png)
 
 La imagen es de un atardecer donde se ven los arboles oscuros y el pasto en la
