@@ -57,3 +57,26 @@ aparece únicamente en el punto 4, que pide corroborar contra `cv2.cvtColor()`.
 Sobre la fotografía completa la diferencia máxima entre ambos métodos es de
 **0.50** en un rango de 0 a 255. No es un error de fórmula sino de redondeo:
 `cvtColor` devuelve enteros y la versión manual trabaja en punto flotante.
+
+## Taller de Laboratorio 2 — Analisis estadistico
+
+`lab04_histograma_canales.py`
+
+![Histogramas de los tres canales](img/lab04_histogramas.png)
+
+La imagen es de un atardecer donde se ven los arboles oscuros y el pasto en la
+parte de abajo. En este ejercicio mire los tres canales por separado para ver
+que tanto aparece cada color en la imagen.
+
+El color dominante es el rojo. Es el unico que se dispara cerca del 250, que
+es la parte del cielo donde hay bastante luz. El verde tambien aparece
+bastante, pero se concentra en la mitad del grafico, es como una montaña o 
+joroba alrededor de 150 que corresponde al pasto y los arboles iluminados. 
+El azul por otro lado tiene un pico muy alto en 0, o sea que aporta sobre 
+todo a las partes oscuras, y en las zonas claras casi no aparece.
+
+Viendo los tres histogramas juntos se puede entender mejor porque la imagen
+tiene unas partes muy oscuras y otras bastante claras. Tambien se puede ver
+que hay colores repartidos por casi todo el rango de 0 a 255, lo que hace que
+la imagen tenga buen contraste y se puedan diferenciar bien sus diferentes
+zonas.
