@@ -91,3 +91,24 @@ una matriz de 3 dimensiones a tener un solo vector.
 
 Por eso, la capa de entrada de la red neuronal necesita 120,000 neuronas,
 una por cada valor de la imagen.
+
+## Taller de Laboratorio Final: Programando un Kernel
+
+Codigo: [`lab02_kernel_convolucion.py`](lab02_kernel_convolucion.py)
+
+Multiplique la seccion de imagen por el kernel usando el producto Hadamard
+(operador `*`) y luego sume todos los valores con `np.sum()`. El resultado es
+el valor que la convolucion escribe en la posicion central.
+
+~~~
+Pixel central original:   200
+Pixel central resultante: 600
+~~~
+
+El pixel paso de 200 a 600 porque el kernel resta los cuatro vecinos y
+multiplica el centro por 5. Como el centro ya era mas brillante que su entorno,
+esa diferencia se amplifica.
+
+Los coeficientes del kernel suman 1 (5 - 4), asi que en una zona donde todos los
+valores son iguales el resultado no cambia. El filtro solo actua donde hay
+contraste, y ese es el principio con el que una CNN detecta bordes y texturas.
