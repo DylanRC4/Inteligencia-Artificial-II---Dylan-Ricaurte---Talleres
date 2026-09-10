@@ -33,3 +33,61 @@ Y para pasarlo a MiB usamos 1 MiB = 1,048,576 bytes:
 `6,220,800 ÷ 1,048,576 ≈ 5.93 MiB`
 
 Entonces, la imagen ocupa aproximadamente **6.22 MB** o **5.93 MiB**.
+
+## Taller de Laboratorio 1: Transformaciones Afines
+
+Codigo: [`lab01_transformaciones_afines.py`](lab01_transformaciones_afines.py)
+
+Use `alpha = 0.5` para reducir el contraste de la imagen y `beta = -50` para
+bajar el brillo en 50 unidades.
+
+Primero se hace el calculo usando `float32` y despues se usa `np.clip()` para
+mantener los valores entre 0 y 255 antes de convertirlos a `uint8`. Esto es
+importante porque si un valor negativo se convierte directamente a `uint8`,
+puede terminar convirtiendose en un valor muy alto.
+
+~~~
+Amplitud original:  51
+Amplitud procesada: 26
+~~~
+
+La amplitud procesada queda aproximadamente en la mitad de la original, que es
+lo esperado porque usamos `alpha = 0.5`. El `beta` afecta principalmente el
+brillo, mientras que `alpha` es el que cambia el contraste.
+
+## Taller Analitico 2: Transformaciones
+
+![Desarrollo del taller analitico 2](img/taller02_analitico.png)
+
+### Respuestas
+
+**1.Punto**
+
+Tenemos una matriz identidad de 4x4 y tenemos que transponerla, es decir,
+intercambiar las filas por las columnas.
+
+En este caso la matriz no cambia porque los `1` estan en la diagonal principal
+y los demas valores son `0`.
+
+`I^T = I`
+
+Por eso, aunque hagamos la transpuesta, la matriz queda exactamente igual.
+
+**2.Punto**
+
+Tenemos una imagen RGB de tamaño `200 x 200 x 3` y necesitamos convertirla en
+un solo vector para poder usarla como entrada de una red neuronal.
+
+Primero calculamos la cantidad de pixeles:
+
+`200 × 200 = 40,000 pixeles`
+
+Como cada pixel tiene 3 canales RGB:
+
+`40,000 × 3 = 120,000 valores`
+
+Al aplanar la imagen no se elimina ningun dato, simplemente se pasa de tener
+una matriz de 3 dimensiones a tener un solo vector.
+
+Por eso, la capa de entrada de la red neuronal necesita 120,000 neuronas,
+una por cada valor de la imagen.
