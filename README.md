@@ -18,3 +18,4 @@ pip install -r requirements.txt
 |---|------|---------|
 | 01 | Refuerzo Python y Álgebra Lineal | `sesion01_algebra_lineal/` |
 | 02 | Tensor de Color y Análisis Estadístico | `sesion02_tensor_color/` |
+| 03 | Segmentación | `sesion03_segmentacion/` |
