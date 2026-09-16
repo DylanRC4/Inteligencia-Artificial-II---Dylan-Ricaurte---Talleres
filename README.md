@@ -21,3 +21,4 @@ pip install -r requirements.txt
 | 03 | Segmentación | `sesion03_segmentacion/` |
 | 04 | Convolución y Filtrado | `sesion04_convolucion/` |
 | 05 | Gradientes Espaciales y Detección de Bordes | `sesion05_gradientes/` |
+| 06 | Extracción de Características y Contornos | `sesion06_contornos/` |
