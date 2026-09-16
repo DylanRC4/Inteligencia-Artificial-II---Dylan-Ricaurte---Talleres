@@ -20,3 +20,4 @@ pip install -r requirements.txt
 | 02 | Tensor de Color y Análisis Estadístico | `sesion02_tensor_color/` |
 | 03 | Segmentación | `sesion03_segmentacion/` |
 | 04 | Convolución y Filtrado | `sesion04_convolucion/` |
+| 05 | Gradientes Espaciales y Detección de Bordes | `sesion05_gradientes/` |
