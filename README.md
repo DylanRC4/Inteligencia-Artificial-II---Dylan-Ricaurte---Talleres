@@ -23,3 +23,4 @@ pip install -r requirements.txt
 | 05 | Gradientes Espaciales y Detección de Bordes | `sesion05_gradientes/` |
 | 06 | Extracción de Características y Contornos | `sesion06_contornos/` |
 | 09 | KNN — K Vecinos Más Cercanos | `sesion09_knn/` |
+| 10 | SVM — Máquinas de Vectores de Soporte | `sesion10_svm/` |
