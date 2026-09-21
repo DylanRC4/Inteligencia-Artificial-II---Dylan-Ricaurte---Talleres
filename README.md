@@ -24,3 +24,4 @@ pip install -r requirements.txt
 | 06 | Extracción de Características y Contornos | `sesion06_contornos/` |
 | 09 | KNN — K Vecinos Más Cercanos | `sesion09_knn/` |
 | 10 | SVM — Máquinas de Vectores de Soporte | `sesion10_svm/` |
+| 11 | Redes Neuronales — El Perceptrón | `sesion11_perceptron/` |
