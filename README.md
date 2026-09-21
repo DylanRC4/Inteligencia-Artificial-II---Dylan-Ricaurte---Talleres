@@ -25,3 +25,4 @@ pip install -r requirements.txt
 | 09 | KNN — K Vecinos Más Cercanos | `sesion09_knn/` |
 | 10 | SVM — Máquinas de Vectores de Soporte | `sesion10_svm/` |
 | 11 | Redes Neuronales — El Perceptrón | `sesion11_perceptron/` |
+| 12 | Redes Neuronales Multicapa (MLP) | `sesion12_mlp/` |
